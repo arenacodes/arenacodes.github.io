@@ -2,6 +2,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
 
+    document.write("You will be redirected to main page in 10 sec.");
+              setTimeout('Redirect()', 1);
+
     window.location="user.html";
 
   } else {

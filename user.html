@@ -58,7 +58,10 @@
   } else {
     // No user is signed in.
 
-    window.location="index.html";
+        document.write("You have not Logged In"
+        	+"(Redirecting to the Login Page.)");
+              setTimeout('Redirect()', 500);
+              window.location="index.html";
 
   }
 });
