@@ -152,13 +152,13 @@ form.sign-in-form {
 }
 
 #sign-in-btn:hover {
-	background-color: #FFFFFF;
-	color: #5995fd;
+  color: #5995fd;
+  background-color: #FFFFFF;
 }
 
 #sign-up-btn:hover {
-	background-color: #FFFFFF;
-	color: #5995fd;
+  color: #5995fd;
+  background-color: #FFFFFF;
 }
 
 .panels-container {
