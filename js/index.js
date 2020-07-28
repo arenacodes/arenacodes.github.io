@@ -11,7 +11,7 @@ function log() {
   } else {
     // No user is signed in.
 
-    window.location="login.html";
+    window.location="hello.html";
 
   }
 });
