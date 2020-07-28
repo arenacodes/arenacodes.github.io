@@ -2,10 +2,13 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
 
-    document.write("You will be redirected to main page in 10 sec.");
-              setTimeout('Redirect()', 1);
+    document.getElementById("nn").style.display = "none";
+    document.getElementById("sec").style.display = "none";
 
-    window.location="user.html";
+    document.write("You will be redirected to user.");
+              setTimeout('Redirect()', 500);
+
+    window.location="account/user.html";
 
   } else {
     // No user is signed in.
@@ -26,7 +29,7 @@ function loginUser() {
     firebase.auth().signInWithEmailAndPassword(email,password).then(function () {
         //this function works when login successfully
 
-        window.location="user.html";
+        window.location="account/user.html";
     }).catch(function (error) {
        //this will handle error
         var errorMessage=error.message;

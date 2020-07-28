@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arena Codes</title>
+	<link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+	<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+	<div class="navbar">
+   <div>
+     <a class="icon" href="#" style="font-size: 1.2rem;" id="icons"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#" style="font-size: 1.2rem;" id="icons"><i class="fa fa-fw fa-search"></i> Search</a>
+        <a href="#" style="font-size: 1.2rem;" id="icons"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="#" style="font-size: 1.2rem;" id="icons"><i class="fa fa-fw fa-user"></i> Login</a>
+        <input type="text" placeholder="Search..">
+   </div>
+   <div class="log">
+     <a onclick="log();">
+          <i class="fa fa-user-circle" aria-hidden="true" style="font-size: 1.9rem;"></i>
+        </a>
+   </div> 
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCf9HGmFrVqyQVUopS034wjSB0HKMq9m2I",
+    authDomain: "arena-codes.firebaseapp.com",
+    databaseURL: "https://arena-codes.firebaseio.com",
+    projectId: "arena-codes",
+    storageBucket: "arena-codes.appspot.com",
+    messagingSenderId: "564041315931",
+    appId: "1:564041315931:web:4c71dde6186ad31992317e",
+    measurementId: "G-0XEDR0RN47"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+ <script src="js/index.js"></script>
+
+</body>
+</html>

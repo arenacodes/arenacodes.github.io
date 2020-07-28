@@ -21,9 +21,12 @@
 			color: #5995fd;
 		}
 	</style>
-
+  <div id="user_div" class="logout">
+    <h1>Welcome User</h1>
+    <p id="user_para">Welcome to Arena Codes. You're currently logged in.</p>
+  </div>
 	<div class="logout">
-		<h1>Logout</h1>
+		<h3>Logout</h3>
 		<button class="log" onclick="logout();">Logout</button>
 	</div>
 
@@ -31,23 +34,26 @@
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-database.js"></script>
+
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
 <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyDPPH81T1GSDu0dWrnPErpTC_GdDxBMRIA",
-      authDomain: "myapp-c8b11.firebaseapp.com",
-      databaseURL: "https://myapp-c8b11.firebaseio.com",
-      projectId: "myapp-c8b11",
-      storageBucket: "myapp-c8b11.appspot.com",
-      messagingSenderId: "265544800336",
-      appId: "1:265544800336:web:4a96b043388ae690be1955",
-      measurementId: "G-8QGRTRHVMN"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCf9HGmFrVqyQVUopS034wjSB0HKMq9m2I",
+    authDomain: "arena-codes.firebaseapp.com",
+    databaseURL: "https://arena-codes.firebaseio.com",
+    projectId: "arena-codes",
+    storageBucket: "arena-codes.appspot.com",
+    messagingSenderId: "564041315931",
+    appId: "1:564041315931:web:4c71dde6186ad31992317e",
+    measurementId: "G-0XEDR0RN47"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 
     firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -61,13 +67,13 @@
         document.write("You have not Logged In"
         	+"(Redirecting to the Login Page.)");
               setTimeout('Redirect()', 500);
-              window.location="index.html";
+              window.location="../login.html";
 
   }
 });
 </script>
 
-<script src="js/log.js"></script>
+<script src="../js/log.js"></script>
 
 </body>
 </html>
